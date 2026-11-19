@@ -1,0 +1,709 @@
+    /* Basic Page Setup */
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #363636;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #14a7dc;
+    color: #fff;
+}
+
+h1 {
+    color: #003366;
+    text-align: center;
+}
+
+/* Main Content Area */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Hero Banner on Home Page */
+.hero-banner {
+    background-image: url();
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #666;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Team Photo */
+.team-img {
+    width: 300px;
+    border: 2px solid #333;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #66b2ff;
+}
+/*This is for about.html */
+.studentid {
+    color: rgb(173, 12, 12);
+}
+
+.groupphoto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+}
+.groupphoto img {
+    border: 3px solid rgb(16, 14, 14);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.groupphoto figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #515050;
+}
+
+tr :hover {
+    color: #66b2ff;
+}
+
+.highlightbox {
+    background-color: #f8fafc;
+    border-left: 4px solid #14a7dc;
+    padding: 10px 15px;
+    margin: 8px 0 15px 0; 
+    margin-left: 0; 
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+.highlightbox p {
+    margin: 4px 0;
+}
+/*This is for apply.html */
+/* Form Container - Spread fully across the content area */
+main:has(form) {
+    max-width: 1200px;
+    width: 92%;
+    box-sizing: border-box;
+    padding: 30px 40px;
+}
+
+main form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+/* Fieldsets and Legends */
+form fieldset {
+    border: none;
+    margin: 0 0 35px 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form legend {
+    font-size: 18px;
+    font-weight: 700;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 18px;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+/* Form Paragraphs and Labels */
+form p {
+    margin: 0 0 16px 0;
+}
+
+form label {
+    display: block;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* Text Inputs, Date, Selects, and Textareas */
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f2f6fa;
+    border: 1px solid #333333;
+    border-radius: 2px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #222222;
+    font-family: Calibri, sans-serif;
+    transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    background-color: #ffffff;
+    border-color: #003366;
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.15);
+}
+
+/* Personal Information (Balanced 6-Column Grid to eliminate empty spaces) */
+form fieldset:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 24px;
+    row-gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form fieldset:first-of-type legend {
+    grid-column: 1 / -1;
+}
+
+form fieldset:first-of-type p {
+    margin: 0;
+}
+
+/* First & Last Name: 50% each */
+form fieldset:first-of-type p:nth-of-type(1) {
+    grid-column: span 3;
+}
+
+form fieldset:first-of-type p:nth-of-type(2) {
+    grid-column: span 3;
+}
+
+/* Address & Suburb row: 50% each spanning full width */
+form fieldset:first-of-type > span {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "lbl-addr lbl-sub"
+        "inp-addr inp-sub";
+    column-gap: 24px;
+    row-gap: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form fieldset:first-of-type > span label[for="address"] {
+    grid-area: lbl-addr;
+}
+
+form fieldset:first-of-type > span #address {
+    grid-area: inp-addr;
+}
+
+form fieldset:first-of-type > span label[for="sub_town"] {
+    grid-area: lbl-sub;
+}
+
+form fieldset:first-of-type > span #sub_town {
+    grid-area: inp-sub;
+}
+
+/* Date of Birth, State, Postcode: Balanced across 3 equal columns */
+form fieldset:first-of-type p:nth-of-type(3) {
+    grid-column: span 2;
+}
+
+form fieldset:first-of-type p:nth-of-type(4) {
+    grid-column: span 3;
+}
+
+form fieldset:first-of-type p:nth-of-type(5) {
+    grid-column: span 3;
+}
+
+/* Email & Phone number: 50% each */
+form fieldset:first-of-type p:nth-of-type(6) {
+    grid-column: span 3;
+}
+
+form fieldset:first-of-type p:nth-of-type(7) {
+    grid-column: span 3;
+}
+
+/* Gender Selection Styling */
+form fieldset:nth-of-type(2) p {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    accent-color: #003366;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    display: inline;
+    font-weight: 600;
+    color: #333333;
+    margin-left: 6px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* Job Information (Spans 100% across row) */
+form fieldset:nth-of-type(3) p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+form fieldset:nth-of-type(3) label {
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+form fieldset:nth-of-type(3) input {
+    flex: 1;
+}
+
+/* Skill List Section (Spread across 2 balanced columns) */
+form fieldset:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form fieldset:nth-of-type(4) legend,
+form fieldset:nth-of-type(4) > p:first-of-type,
+form fieldset:nth-of-type(4) > p:last-of-type {
+    grid-column: 1 / -1;
+}
+
+form fieldset:nth-of-type(4) p {
+    margin: 0;
+}
+
+form fieldset:nth-of-type(4) > p:first-of-type {
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+/* Skill other textarea toggle */
+#other_skill_text {
+    display: none;
+    margin-top: 10px;
+    min-height: 120px;
+    resize: vertical;
+    width: 100%;
+}
+
+#skill_other:checked ~ #other_skill_text {
+    display: block;
+}
+
+/* Submit Button */
+form > p:last-of-type {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button_submit {
+    display: inline-block;
+    background-color: #003366;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 51, 102, 0.2);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.button_submit:hover {
+    background-color: #14a7dc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(20, 167, 220, 0.35);
+}
+
+.button_submit:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 51, 102, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main:has(form) {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    form fieldset:first-of-type {
+        grid-template-columns: 1fr;
+    }
+    form fieldset:first-of-type p:nth-of-type(1),
+    form fieldset:first-of-type p:nth-of-type(2),
+    form fieldset:first-of-type p:nth-of-type(3),
+    form fieldset:first-of-type p:nth-of-type(4),
+    form fieldset:first-of-type p:nth-of-type(5),
+    form fieldset:first-of-type p:nth-of-type(6),
+    form fieldset:first-of-type p:nth-of-type(7) {
+        grid-column: 1 / -1;
+    }
+    form fieldset:first-of-type > span {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "lbl-addr"
+            "inp-addr"
+            "lbl-sub"
+            "inp-sub";
+    }
+    form fieldset:nth-of-type(3) p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    form fieldset:nth-of-type(3) input {
+        width: 100%;
+    }
+    form fieldset:nth-of-type(4) {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*This is for index.html */
+
+body:has(#index-content) {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.index-intro {
+    background-image: linear-gradient(
+        rgba(244, 244, 244, 0.9),
+        rgba(244, 244, 244, 0.9)
+    ), url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.index-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.index-logo {
+    width: 100px;
+    height: auto;
+}
+
+.index-brand h1 {
+    color: #003366;
+    text-align: left;
+    margin: 0;
+}
+
+.index-brand h2 {
+    color: #003366;
+    margin: 5px 0;
+}
+
+.index-search {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#index-content {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+#index-content h2 {
+    color: #003366;
+}
+
+#index-content li {
+    margin-bottom: 10px;
+}
+
+#index-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#index-content th,
+#index-content td {
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .index-brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .index-brand h1 {
+        text-align: center;
+    }
+
+    .index-intro {
+        padding: 15px;
+    }
+
+    #index-content {
+        padding: 15px;
+        overflow-x: auto;
+    }
+}
+
+/*This is for jobs.html */
+
+/* Main Headings & Subheadings Styling */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+main h2 {
+    color: #003366;
+    font-size: 24px;
+    border-bottom: 2px solid #14a7dc;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Job Cards */
+article {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Subtle elevation on hover */
+article:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e1;
+}
+
+article h3 {
+    color: #003366;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+article h4 {
+    color: #1e293b;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* Clean styling for lists */
+article ol, article ul {
+    background-color: #f8fafc;
+    border-left: 3px solid #14a7dc;
+    padding: 12px 15px 12px 35px;
+    border-radius: 0 6px 6px 0;
+}
+
+article li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* Apply Button (Hover & Click Effects) */
+article p a[href*="apply.html"] {
+    display: inline-block;
+    background-color: #003366;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0, 51, 102, 0.2);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+/* HOVER EFFECT: Brighten color & lift up slightly */
+article p a[href*="apply.html"]:hover {
+    background-color: #14a7dc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(20, 167, 220, 0.35);
+}
+
+/* ACTIVE/CLICK EFFECT: Subtle press-down feel */
+article p a[href*="apply.html"]:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 51, 102, 0.3);
+}
+
+/* Candidate Notice Aside Styling */
+aside {
+    border: none !important;
+    border-top: 4px solid #14a7dc !important;
+    background: #ffffff !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* Aside Hover Effect */
+aside:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.12);
+    border-top-color: #003366 !important;
+}
+
+aside h3 {
+    color: #003366;
+    margin-top: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+aside p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* Remove redundant horizontal line */
+main hr {
+    display: none;
+}
+

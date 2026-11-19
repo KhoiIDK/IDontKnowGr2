@@ -1,0 +1,146 @@
+<!-- we will be Smart City Infrastructure Consultancy, our company name is "Smarter Future" -->
+<!--REMEMBER TO READ THE ASSIGNMENT AND LOOK ON JIRA TO KNOW WHAT URE DOING-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        label[for="job_ref_num"] {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Smarter Future</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="apply.html">Apply Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Become one of us for a "Smarter Future"</h1>
+    <main>
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <fieldset>
+            <legend>Personal information</legend>
+            <p>
+                <label for="first_name">First name:</label>
+                <input id="first_name" name="first_name" type="text" pattern="^[a-zA-Z]+$" maxlength="20" size="40" required="required">
+            </p>
+            
+            <p>
+                <label for="last_name">Last name:</label>
+                <input id="last_name" name="last_name" type="text" pattern="^[a-zA-Z]+$" maxlength="20" size="40" required="required">
+            </p>
+            <p>
+                <label for="dob">Date of birth:</label>
+                <input id="dob" name="dob" type="text" placeholder="dd/mm/yyyy" pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$" required="required">
+            </p>
+
+            <span>
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="address" maxlength="40" size="40" required="required">
+
+            <label for="sub_town">Suburb/Town:</label>
+            <input type="text" id="sub_town" name="sub_town" maxlength="40" size="40" required="required">
+            </span>
+
+            <p>
+                <label for="state">State:</label>
+                <select id="state" name="state" required="required">
+                    <option value="" selected="selected">Please Select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </p>
+            <p>
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" required="required" pattern="^[0-9]{4}$" maxlength="4" size="40">
+            </p>
+            
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required="required" size="40">
+            </p>
+
+            <p>
+                <label for="phone_num">Phone number:</label>
+                <input type="tel" id="phone_num" name="phone_num" pattern="^[0-9]{8,12}$" size="40" required="required" maxlength="40"> 
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <p><input type="radio" name="gender" id="male" value="Male" required="required"><label for="male" style="text-decoration: underline;">Male</label> <input type="radio" name="gender" id="female" value="female" required="required"><label for="female" style="text-decoration: underline;">Female</label>
+            <input type="radio" name="gender" id="not_said" value="not_said" required="required"> <label for="not_said" style="text-decoration: underline;">Prefer not to say</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+                <legend>Job information:</legend>
+                <p>
+                    <label for="job_ref_num">Job reference number:</label>
+                    <input id="job_ref_num" name="job_ref_num" type="text" pattern="^[a-zA-Z0-9 ]{5}$" maxlength="5" size="40" required="required">
+                </p>
+            </fieldset>
+            <fieldset>
+    <legend>Skill list</legend>
+    <p>Select your areas of expertise in Renewable Energy:</p>
+
+    <p>
+        <input type="checkbox" id="skill_solar_wind" name="skills[]" value="Solar_Wind_Systems">
+        <label for="skill_solar_wind">Solar PV &amp; Wind Energy Systems</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="skill_smart_grid" name="skills[]" value="Smart_Grid_Storage" >
+        <label for="skill_smart_grid">Smart Grid &amp; Battery Energy Storage (BESS)</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="skill_scada" name="skills[]" value="SCADA_EMS" >
+        <label for="skill_scada">SCADA &amp; Energy Management Systems (EMS)</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="skill_carbon" name="skills[]" value="Carbon_Accounting" >
+        <label for="skill_carbon">Carbon Footprint &amp; Emission Tracking</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="skill_engagement" name="skills[]" value="Public_Engagement" >
+        <label for="skill_engagement">Clean Energy Public Engagement &amp; Outreach</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="skill_other" name="skills[]" value="Other" >
+        <label for="skill_other">Other skills</label>
+        <textarea id="other_skill_text" name="skill_other" rows="10" cols="40" placeholder="Please specify your other skills"></textarea>
+    </p>
+</fieldset>
+
+    <p>
+        <input type="submit" value="Submit" class="button_submit">
+    </p>
+
+    </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Smarter Future Infrastructure Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
