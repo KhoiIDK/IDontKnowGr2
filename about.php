@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <nav>
-            <div class="logo">Smarter Future</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply Now</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include 'header.inc'; ?>
 
     <h1>Learn more about the people of Smarter Future</h1>
 
@@ -105,8 +85,4 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Smarter Future Infrastructure Solutions. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<?php include 'footer.inc'; ?>

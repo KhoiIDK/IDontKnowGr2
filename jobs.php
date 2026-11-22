@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Openings - Smart City Infrastructure Consultancy</title>
-    <link rel="stylesheet" href="styles.css">
+<?php include 'header.inc'; ?>
     <!-- Embedded CSS cho trang jobs theo yêu cầu đề bài -->
     <style>
         aside {
@@ -19,21 +13,6 @@
             overflow: hidden; /* Clearfix cho float aside */
         }
     </style>
-</head>
-<body>
-
-    <!-- Header / Navigation chung -->
-    <header>
-        <nav>
-            <div class="logo">Smarter Future</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply Now</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <h1>Smarter Future Infrastructure Solutions</h1>
 
@@ -114,12 +93,4 @@
                 <p><a href="apply.html?job=ENRG2">Apply for this position</a></p>
             </article>
         </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Smarter Future Infrastructure Solutions. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+<?php include 'footer.inc'; ?>
