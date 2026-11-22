@@ -13,7 +13,7 @@ $result = mysqli_query($conn, $sql);
             <h3>Group Information</h3>
             <ul>
                 <li><strong>Group name:</strong> IDontKnow</li>
-                <li><strong>Class/time:</strong> COS10026-Thurday-Morning class (7AM-10AM)</li>
+                <li><strong>Class/time:</strong> COS10026-Thursday-Morning class (7AM-10AM)</li>
             </ul>
         </section>
         <section>
