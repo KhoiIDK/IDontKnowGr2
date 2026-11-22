@@ -1,30 +1,12 @@
 <!-- we will be Smart City Infrastructure Consultancy, our company name is "Smarter Future" -->
 <!--REMEMBER TO READ THE ASSIGNMENT AND LOOK ON JIRA TO KNOW WHAT URE DOING-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Site</title>
-    <link rel="stylesheet" href="styles.css">
+<?php include 'header.inc'; ?>
     <style>
         label[for="job_ref_num"] {
             font-weight: bold;
         }
     </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Smarter Future</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply Now</a></li>
-            </ul>
-        </nav>
-    </header>
+
     <h1>Become one of us for a "Smarter Future"</h1>
     <main>
     <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
@@ -137,10 +119,4 @@
     </p>
 
     </form>
-    </main>
-    <footer>
-        <p>&copy; 2026 Smarter Future Infrastructure Solutions. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+<?php include 'footer.inc'; ?>
