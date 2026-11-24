@@ -1,3 +1,4 @@
+<?php include 'header.inc'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,19 +18,6 @@
 </head>
 
 <body>
-
-    <header>
-        <nav>
-            <div class="logo">SMARTER FUTURE</div>
-
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply Now</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <section class="index-intro">
 
@@ -216,33 +204,4 @@
 
     </article>
 
-    <footer>
-
-        <p>
-            Our Jira:
-            <a href="https://vominhkhoi19052020.atlassian.net/jira/for-you?continue=https%3A%2F%2Fvominhkhoi19052020.atlassian.net%2Fwelcome%2Fsoftware%3FprojectId%3D10001&amp;atlOrigin=eyJpIjoiNzM0OTE0NDg0NWY0NDk5MzhkM2YyNmM0NTU4NWM4OGYiLCJwIjoiamlyYS1zb2Z0d2FyZSJ9&amp;tab=recommendedActions">Jira</a>
-        </p>
-
-        <p>
-            Email:
-            <a href="mailto:hienminhlq2@gmail.com">
-                hienminhlq2@gmail.com
-            </a>
-        </p>
-
-        <p>
-            Our GitHub:
-            <a href="https://github.com/KhoiIDK/IDontKnowGr">
-                GitHub Repository
-            </a>
-        </p>
-
-        <p style="font-size: 14px;">
-            &copy; 2026 Smarter Future Infrastructure Solutions.
-            All rights reserved.
-        </p>
-
-    </footer>
-
-</body>
-</html>
+<?php include 'footer.inc'; ?>
