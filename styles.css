@@ -643,7 +643,7 @@ article li {
 }
 
 /* Apply Button (Hover & Click Effects) */
-article p a[href*="apply.html"] {
+article p a[href*="apply.php"] {
     display: inline-block;
     background-color: #003366;
     color: #ffffff !important;
@@ -659,14 +659,14 @@ article p a[href*="apply.html"] {
 }
 
 /* HOVER EFFECT: Brighten color & lift up slightly */
-article p a[href*="apply.html"]:hover {
+article p a[href*="apply.php"]:hover {
     background-color: #14a7dc;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(20, 167, 220, 0.35);
 }
 
 /* ACTIVE/CLICK EFFECT: Subtle press-down feel */
-article p a[href*="apply.html"]:active {
+article p a[href*="apply.php"]:active {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 51, 102, 0.3);
 }
