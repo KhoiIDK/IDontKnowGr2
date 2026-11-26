@@ -150,21 +150,21 @@ require_once 'settings.php';
 
 // 7. Create EOI table if it does not exist
 $sql = "CREATE TABLE IF NOT EXISTS eoi (
-    EOInumber INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(20) NOT NULL,
-    last_name VARCHAR(20) NOT NULL,
-    dob DATE NOT NULL,
-    address VARCHAR(40) NOT NULL,
-    sub_town VARCHAR(40) NOT NULL,
-    state VARCHAR(3) NOT NULL,
-    postcode VARCHAR(4) NOT NULL,
-    email VARCHAR(254) NOT NULL,
-    phone_num VARCHAR(12) NOT NULL,
-    gender VARCHAR(20) NOT NULL,
-    job_ref_num VARCHAR(5) NOT NULL,
-    skills TEXT,
-    skill_other TEXT,
-    status ENUM('New', 'Current', 'Final') DEFAULT 'New'
+    `eoi_number` int(11) NOT NULL,
+  `job_ref_num` varchar(5) NOT NULL,
+  `first_name` varchar(20) NOT NULL,
+  `last_name` varchar(20) NOT NULL,
+  `dob` varchar(10) NOT NULL,
+  `gender` varchar(15) NOT NULL,
+  `street_address` varchar(40) NOT NULL,
+  `suburb_town` varchar(40) NOT NULL,
+  `state` varchar(3) NOT NULL,
+  `postcode` varchar(4) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone_num` varchar(15) NOT NULL,
+  `skills` varchar(255) DEFAULT NULL,
+  `other_skills` text DEFAULT NULL,
+  `status` enum('New','Current','Final') NOT NULL DEFAULT 'New'
 )";
 
 if (!mysqli_query($conn, $sql)) {
@@ -176,8 +176,8 @@ $query = "INSERT INTO eoi (
     first_name,
     last_name,
     dob,
-    address,
-    sub_town,
+    street_address,
+    suburb_town,
     state,
     postcode,
     email,
@@ -185,7 +185,7 @@ $query = "INSERT INTO eoi (
     gender,
     job_ref_num,
     skills,
-    skill_other
+    other_skills
 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = mysqli_prepare($conn, $query);
