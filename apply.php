@@ -9,7 +9,7 @@
 
     <h1>Become one of us for a "Smarter Future"</h1>
     <main>
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <form action="process_eoi.php" method="post">
         <fieldset>
             <legend>Personal information</legend>
             <p>
