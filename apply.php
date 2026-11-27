@@ -9,17 +9,17 @@
 
     <h1>Become one of us for a "Smarter Future"</h1>
     <main>
-    <form action="process_eoi.php" method="post">
+    <form action="process_eoi.php" novalidate method="post">
         <fieldset>
             <legend>Personal information</legend>
             <p>
                 <label for="first_name">First name:</label>
-                <input id="first_name" name="first_name" type="text" pattern="^[a-zA-Z]+$" maxlength="20" size="40" required="required">
+                <input id="first_name" name="first_name" type="text" pattern="^[a-zA-Z]+$" size="40" required="required">
             </p>
             
             <p>
                 <label for="last_name">Last name:</label>
-                <input id="last_name" name="last_name" type="text" pattern="^[a-zA-Z]+$" maxlength="20" size="40" required="required">
+                <input id="last_name" name="last_name" type="text" pattern="^[a-zA-Z]+$" size="40" required="required">
             </p>
             <p>
                 <label for="dob">Date of birth:</label>
@@ -28,10 +28,10 @@
 
             <span>
             <label for="address">Street Address:</label>
-            <input type="text" id="address" name="address" maxlength="40" size="40" required="required">
+            <input type="text" id="address" name="address" size="40" required="required">
 
             <label for="sub_town">Suburb/Town:</label>
-            <input type="text" id="sub_town" name="sub_town" maxlength="40" size="40" required="required">
+            <input type="text" id="sub_town" name="sub_town" size="40" required="required">
             </span>
 
             <p>
@@ -50,7 +50,7 @@
             </p>
             <p>
                 <label for="postcode">Postcode:</label>
-                <input type="text" id="postcode" name="postcode" required="required" pattern="^[0-9]{4}$" maxlength="4" size="40">
+                <input type="text" id="postcode" name="postcode" required="required" pattern="^[0-9]{4}$" size="40">
             </p>
             
             <p>
@@ -60,7 +60,7 @@
 
             <p>
                 <label for="phone_num">Phone number:</label>
-                <input type="tel" id="phone_num" name="phone_num" pattern="^[0-9]{8,12}$" size="40" required="required" maxlength="40"> 
+                <input type="tel" id="phone_num" name="phone_num" pattern="^[0-9]{8,12}$" size="40" required="required"> 
             </p>
         </fieldset>
 
@@ -75,7 +75,7 @@
                 <legend>Job information:</legend>
                 <p>
                     <label for="job_ref_num">Job reference number:</label>
-                    <input id="job_ref_num" name="job_ref_num" type="text" pattern="^[a-zA-Z0-9 ]{5}$" maxlength="5" size="40" required="required">
+                    <input id="job_ref_num" name="job_ref_num" type="text" pattern="^[a-zA-Z0-9 ]{5}$" size="40" required="required">
                 </p>
             </fieldset>
             <fieldset>
